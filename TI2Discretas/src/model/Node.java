@@ -5,10 +5,17 @@ public class Node {
 	Node right;
 	Node left;
 	
-	Node height;
+	int height;
 	
 	public Node(Person data)
 	{
 		this.data=data;
+	}
+	
+	public String toString()
+	{
+		String out="";
+		out=data.toString();
+		return out;
 	}
 }

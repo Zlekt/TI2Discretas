@@ -10,6 +10,10 @@ import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.fxml.FXMLLoader;
 
+import model.AVL_Tree;
+import model.Node;
+import model.Person;
+
 
 public class Main extends Application {
 	private Stage currentStage = new Stage();
@@ -59,6 +63,22 @@ public class Main extends Application {
 	}
 	
 	public static void main(String[] args) {
-		launch(args);
+		//launch(args);
+		
+		AVL_Tree tree = new AVL_Tree();
+		String[] names = new String[13];
+		names[0]="1";
+		names[1]="2";
+		names[2]="3";
+		names[3]="5";
+		names[4]="4";
+		
+		for(int i=0; i<5; i++)
+		{
+			Person per=new Person(names[i], names[i]);
+			System.out.println("inserta " + per.toString());
+			tree.insert(per);
+		}
+		tree.show();
 	}
 }

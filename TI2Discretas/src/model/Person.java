@@ -4,6 +4,11 @@ public class Person implements Comparable<Person>{
 	private String name;
 	private String surname;
 	
+	public Person(String name, String surname)
+	{
+		this.surname=surname;
+		this.name=name;
+	}
 	
 	public String getName() {
 		return name;
