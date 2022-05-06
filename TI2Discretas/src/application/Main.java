@@ -12,6 +12,7 @@ import javafx.fxml.FXMLLoader;
 
 import model.AVL_Tree;
 import model.Node;
+import model.PeopleBase;
 import model.Person;
 
 
@@ -64,6 +65,9 @@ public class Main extends Application {
 	
 	public static void main(String[] args) {
 		//launch(args);
+		PeopleBase base=new PeopleBase();
+		
+		base.importData();
 		
 		AVL_Tree tree = new AVL_Tree();
 		String[] names = new String[13];
