@@ -1,6 +1,7 @@
 package application;
 	
 import java.io.IOException;
+import java.util.GregorianCalendar;
 
 import controller.AddPersonController;
 import controller.MenuController;
@@ -18,7 +19,7 @@ import model.Person;
 
 public class Main extends Application {
 	private Stage currentStage = new Stage();
-	
+	public static PeopleBase base;
 	
 	@Override
 	public void start(Stage primaryStage) {
@@ -33,7 +34,7 @@ public class Main extends Application {
 			currentStage.setScene(scene);
 			currentStage.setHeight(600);
 			currentStage.setWidth(800);
-			currentStage.show();
+			currentStage.show();			
 			
 		} catch(Exception e) {
 			e.printStackTrace();
@@ -63,26 +64,18 @@ public class Main extends Application {
 		}
 	}
 	
-	public static void main(String[] args) {
-		//launch(args);
-		PeopleBase base=new PeopleBase();
-		
+	public void importRandPeople() {
 		base.importData();
-		
-		AVL_Tree tree = new AVL_Tree();
-		String[] names = new String[13];
-		names[0]="1";
-		names[1]="2";
-		names[2]="3";
-		names[3]="5";
-		names[4]="4";
-		
-		for(int i=0; i<5; i++)
-		{
-			Person per=new Person(names[i], names[i]);
-			System.out.println("inserta " + per.toString());
-			tree.insert(per);
-		}
-		tree.show();
+	}
+	
+	public void addPerson(String n, String sn, String country, GregorianCalendar dob,int gender) {
+		base.addPerson(n, sn, country, dob,gender);
+	}
+	
+	public static void main(String[] args) {
+		base=new PeopleBase();
+		base.inputData();
+		launch(args);	
+		base.outputData();
 	}
 }
