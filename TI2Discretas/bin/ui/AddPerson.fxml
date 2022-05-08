@@ -1,19 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<<<<<<< HEAD
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
+=======
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+>>>>>>> DevJuan
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddPersonController">
    <center>
       <Pane prefHeight="440.0" prefWidth="631.0" BorderPane.alignment="CENTER">
          <children>
+<<<<<<< HEAD
             <TextField layoutX="334.0" layoutY="180.0" promptText="Nombre" />
             <TextField layoutX="334.0" layoutY="263.0" promptText="Apellido" />
             <TextField layoutX="334.0" layoutY="334.0" promptText="Edad" />
             <RadioButton layoutX="297.0" layoutY="441.0" mnemonicParsing="false" text="Masculino" />
             <RadioButton layoutX="439.0" layoutY="441.0" mnemonicParsing="false" text="Femenino" />
+=======
+            <TextField fx:id="nameBox" layoutX="84.0" layoutY="243.0" prefHeight="25.0" prefWidth="188.0" promptText="Nombre" />
+            <TextField fx:id="surNameBox" layoutX="84.0" layoutY="313.0" prefHeight="25.0" prefWidth="187.0" promptText="Apellido" />
+            <RadioButton fx:id="manradB" layoutX="67.0" layoutY="536.0" mnemonicParsing="false" text="Masculino">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Gender" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="femradB" layoutX="215.0" layoutY="536.0" mnemonicParsing="false" text="Femenino" toggleGroup="$Gender" />
+            <Button layoutX="585.0" layoutY="52.0" mnemonicParsing="false" onAction="#impData" prefHeight="87.0" prefWidth="170.0" text="Generar 1'000,000 de datos aleatorios" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="584.0" layoutY="511.0" mnemonicParsing="false" onAction="#addPerson" prefHeight="84.0" prefWidth="173.0" text="Añadir persona con datos" textAlignment="CENTER" wrapText="true" />
+            <DatePicker fx:id="dobPicker" layoutX="84.0" layoutY="379.0" prefHeight="25.0" prefWidth="186.0" promptText="Fecha de Nacimiento" />
+            <TextField fx:id="countryField" layoutX="84.0" layoutY="428.0" prefHeight="28.0" prefWidth="186.0" promptText="Pais" />
+            <Label layoutX="54.0" layoutY="83.0" prefHeight="128.0" prefWidth="249.0" text="Añadir persona" textFill="#19ae0b" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="34.0" />
+               </font>
+            </Label>
+>>>>>>> DevJuan
          </children></Pane>
    </center>
 </BorderPane>

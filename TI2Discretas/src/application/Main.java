@@ -1,6 +1,10 @@
 package application;
 	
 import java.io.IOException;
+<<<<<<< HEAD
+=======
+import java.util.GregorianCalendar;
+>>>>>>> DevJuan
 
 import controller.AddPersonController;
 import controller.MenuController;
@@ -18,7 +22,11 @@ import model.Person;
 
 public class Main extends Application {
 	private Stage currentStage = new Stage();
+<<<<<<< HEAD
 	
+=======
+	public static PeopleBase base;
+>>>>>>> DevJuan
 	
 	@Override
 	public void start(Stage primaryStage) {
@@ -33,7 +41,11 @@ public class Main extends Application {
 			currentStage.setScene(scene);
 			currentStage.setHeight(600);
 			currentStage.setWidth(800);
+<<<<<<< HEAD
 			currentStage.show();
+=======
+			currentStage.show();			
+>>>>>>> DevJuan
 			
 		} catch(Exception e) {
 			e.printStackTrace();
@@ -63,6 +75,7 @@ public class Main extends Application {
 		}
 	}
 	
+<<<<<<< HEAD
 	public static void main(String[] args) {
 		//launch(args);
 		PeopleBase base=new PeopleBase();
@@ -84,5 +97,20 @@ public class Main extends Application {
 			tree.insert(per);
 		}
 		tree.show();
+=======
+	public void importRandPeople() {
+		base.importData();
+	}
+	
+	public void addPerson(String n, String sn, String country, GregorianCalendar dob,int gender) {
+		base.addPerson(n, sn, country, dob,gender);
+	}
+	
+	public static void main(String[] args) {
+		base=new PeopleBase();
+		base.inputData();
+		launch(args);	
+		base.outputData();
+>>>>>>> DevJuan
 	}
 }
