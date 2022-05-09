@@ -1,10 +1,7 @@
 package application;
 	
 import java.io.IOException;
-<<<<<<< HEAD
-=======
 import java.util.GregorianCalendar;
->>>>>>> DevJuan
 
 import controller.AddPersonController;
 import controller.MenuController;
@@ -22,11 +19,7 @@ import model.Person;
 
 public class Main extends Application {
 	private Stage currentStage = new Stage();
-<<<<<<< HEAD
-	
-=======
 	public static PeopleBase base;
->>>>>>> DevJuan
 	
 	@Override
 	public void start(Stage primaryStage) {
@@ -41,11 +34,7 @@ public class Main extends Application {
 			currentStage.setScene(scene);
 			currentStage.setHeight(600);
 			currentStage.setWidth(800);
-<<<<<<< HEAD
-			currentStage.show();
-=======
 			currentStage.show();			
->>>>>>> DevJuan
 			
 		} catch(Exception e) {
 			e.printStackTrace();
@@ -75,29 +64,6 @@ public class Main extends Application {
 		}
 	}
 	
-<<<<<<< HEAD
-	public static void main(String[] args) {
-		//launch(args);
-		PeopleBase base=new PeopleBase();
-		
-		base.importData();
-		
-		AVL_Tree tree = new AVL_Tree();
-		String[] names = new String[13];
-		names[0]="1";
-		names[1]="2";
-		names[2]="3";
-		names[3]="5";
-		names[4]="4";
-		
-		for(int i=0; i<5; i++)
-		{
-			Person per=new Person(names[i], names[i]);
-			System.out.println("inserta " + per.toString());
-			tree.insert(per);
-		}
-		tree.show();
-=======
 	public void importRandPeople() {
 		base.importData();
 	}
@@ -111,6 +77,5 @@ public class Main extends Application {
 		base.inputData();
 		launch(args);	
 		base.outputData();
->>>>>>> DevJuan
 	}
 }

@@ -1,25 +1,6 @@
 package model;
 
 import java.io.BufferedReader;
-<<<<<<< HEAD
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Random;
-
-public class PeopleBase {
-
-	public PeopleBase() {
-		// TODO Auto-generated constructor stub
-	}
-	
-	public void importData() {
-		ArrayList<String> nameArrayList= new ArrayList();
-		ArrayList<String> surnameArrayList= new ArrayList();
-		
-=======
 import java.io.EOFException;
 import java.io.File;
 import java.io.FileInputStream;
@@ -46,7 +27,6 @@ public class PeopleBase {
 		ArrayList<String> nameArrayList= new ArrayList<String>();
 		ArrayList<String> surnameArrayList= new ArrayList<String>();
 		ArrayList<String> countryArrayList=new ArrayList<String>();
->>>>>>> DevJuan
 		String file = ".\\data\\babynames-clean.csv";
 		BufferedReader reader = null;
 		String line ="";
@@ -82,8 +62,6 @@ public class PeopleBase {
 			e.printStackTrace();
 		}
 		
-<<<<<<< HEAD
-=======
 		try {
 			File countryFile= new File(".\\data\\population_by_country_2020.csv");
 			FileReader countryReader=new FileReader(countryFile);
@@ -99,7 +77,6 @@ public class PeopleBase {
 			e.printStackTrace();
 		}
 		
->>>>>>> DevJuan
 		Random random = new Random();
 		
 		
@@ -109,11 +86,6 @@ public class PeopleBase {
 		for (int i=0; i<1000000;i++) {
 			int nameNum=random.nextInt(nameArrayList.size());
 			int surNameNum=random.nextInt(surnameArrayList.size());
-<<<<<<< HEAD
-			people.add(new Person(nameArrayList.get(nameNum), surnameArrayList.get(surNameNum)));	
-		}
-		
-=======
 			int countryNum=random.nextInt(countryArrayList.size());
 			
 			people.add(new Person(nameArrayList.get(nameNum), surnameArrayList.get(surNameNum),countryArrayList.get(countryNum)));	
@@ -172,6 +144,5 @@ public class PeopleBase {
 		} catch (IOException e2) {
 			e2.printStackTrace();
 		}
->>>>>>> DevJuan
 	}
 }

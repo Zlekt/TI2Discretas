@@ -1,8 +1,5 @@
 package controller;
 
-<<<<<<< HEAD
-import application.Main;
-=======
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.GregorianCalendar;
@@ -12,13 +9,10 @@ import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
->>>>>>> DevJuan
 
 public class AddPersonController {
 
 	private Main main;
-<<<<<<< HEAD
-=======
 	@FXML
 	TextField nameBox;
 	@FXML
@@ -32,13 +26,10 @@ public class AddPersonController {
 	@FXML
 	RadioButton manradB;
 	
->>>>>>> DevJuan
 
 	public void setMain(Main main) {
 		this.main=main;
 	}
-<<<<<<< HEAD
-=======
 	
 	@FXML
 	public void impData() {
@@ -66,5 +57,4 @@ public class AddPersonController {
 		countryField.clear();
 		main.addPerson(name, surName, country, dob,gender);
 	}
->>>>>>> DevJuan
 }

@@ -1,15 +1,5 @@
 package model;
 
-<<<<<<< HEAD
-public class Person implements Comparable<Person>{
-	private String name;
-	private String surname;
-	
-	public Person(String name, String surname)
-	{
-		this.surname=surname;
-		this.name=name;
-=======
 import java.io.Serializable;
 import java.util.GregorianCalendar;
 import java.util.Random;
@@ -58,7 +48,6 @@ public class Person implements Comparable<Person>,Serializable{
 		this.country=country;
 		this.bDay=dob;
 		this.gender=gender;
->>>>>>> DevJuan
 	}
 	
 	public String getName() {

@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<<<<<<< HEAD
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.Pane?>
-=======
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
->>>>>>> DevJuan
 
 <BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
    <center>
       <Pane prefHeight="635.0" prefWidth="921.0" BorderPane.alignment="CENTER">
          <children>
-<<<<<<< HEAD
-            <Button layoutX="422.0" layoutY="174.0" mnemonicParsing="false" onAction="#addPerson" text="Add person" />
-            <Button layoutX="415.0" layoutY="265.0" mnemonicParsing="false" text="Search person" />
-            <Button layoutX="413.0" layoutY="330.0" mnemonicParsing="false" text="Update person" />
-            <Button layoutX="416.0" layoutY="410.0" mnemonicParsing="false" text="Delete person" />
-=======
             <Button layoutX="403.0" layoutY="169.0" mnemonicParsing="false" onAction="#addPerson" prefHeight="47.0" prefWidth="118.0" text="Add person" />
             <Button layoutX="403.0" layoutY="242.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="115.0" text="Search person" />
             <Button layoutX="403.0" layoutY="327.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="116.0" text="Update person" />
@@ -30,7 +19,6 @@
                   <Font name="System Bold Italic" size="33.0" />
                </font>
             </Label>
->>>>>>> DevJuan
          </children>
       </Pane>
    </center>
